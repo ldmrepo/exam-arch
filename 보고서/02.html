@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @page {
+                size: A4;
+                margin: 2cm;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                max-width: 21cm;
+                background: white;
+                color: #333;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 30px;
+                border-bottom: 3px solid #333;
+                padding-bottom: 20px;
+            }
+            .report-meta {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            .report-meta td {
+                padding: 5px;
+                border: none;
+            }
+            .section {
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 18px;
+                border-left: 5px solid #333;
+                padding-left: 10px;
+                margin-top: 20px;
+            }
+            h3 {
+                font-size: 16px;
+                color: #444;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 15px 0;
+            }
+            th,
+            td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f5f5f5;
+                font-weight: bold;
+            }
+            .alert {
+                padding: 10px;
+                background-color: #fff3e0;
+                border-left: 5px solid #ff9800;
+                margin: 10px 0;
+            }
+            .summary-box {
+                border: 1px solid #ccc;
+                padding: 15px;
+                margin: 10px 0;
+                background-color: #f9f9f9;
+            }
+            @media print {
+                .page-break {
+                    page-break-before: always;
+                }
+                table {
+                    page-break-inside: avoid;
+                }
+                h2 {
+                    page-break-after: avoid;
+                }
+                h3 {
+                    page-break-after: avoid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>온라인 시험 부정행위 분석 보고서</h1>
+            <table class="report-meta">
+                <tr>
+                    <td>보고서 번호: CHT-001</td>
+                    <td>시험 코드: TEST-231213</td>
+                    <td>분석 기간: 2024.12.13 14:00~16:00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>1. 부정행위 감지 현황</h2>
+            <div class="summary-box">
+                <p>총 감지 건수: 1,064건 / 조치 건수: 213건 / 처리율: 20.0%</p>
+            </div>
+            <table>
+                <tr>
+                    <th>유형</th>
+                    <th>감지 건수</th>
+                    <th>경고 건수</th>
+                    <th>제재 건수</th>
+                    <th>처리율</th>
+                </tr>
+                <tr>
+                    <td>시선 이탈</td>
+                    <td>520</td>
+                    <td>85</td>
+                    <td>12</td>
+                    <td>18.7%</td>
+                </tr>
+                <tr>
+                    <td>자리 이탈</td>
+                    <td>128</td>
+                    <td>23</td>
+                    <td>8</td>
+                    <td>24.2%</td>
+                </tr>
+                <tr>
+                    <td>다중 얼굴</td>
+                    <td>95</td>
+                    <td>32</td>
+                    <td>15</td>
+                    <td>49.5%</td>
+                </tr>
+                <tr>
+                    <td>금지 물품</td>
+                    <td>76</td>
+                    <td>28</td>
+                    <td>18</td>
+                    <td>60.5%</td>
+                </tr>
+                <tr>
+                    <td>화면 전환</td>
+                    <td>245</td>
+                    <td>45</td>
+                    <td>5</td>
+                    <td>20.4%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section page-break">
+            <h2>2. 시간대별 발생 현황</h2>
+            <table>
+                <tr>
+                    <th>시간대</th>
+                    <th>발생 건수</th>
+                    <th>경고 건수</th>
+                    <th>비율</th>
+                </tr>
+                <tr>
+                    <td>14:00-14:30</td>
+                    <td>285</td>
+                    <td>42</td>
+                    <td>14.7%</td>
+                </tr>
+                <tr>
+                    <td>14:31-15:00</td>
+                    <td>312</td>
+                    <td>58</td>
+                    <td>18.6%</td>
+                </tr>
+                <tr>
+                    <td>15:01-15:30</td>
+                    <td>298</td>
+                    <td>65</td>
+                    <td>21.8%</td>
+                </tr>
+                <tr>
+                    <td>15:31-16:00</td>
+                    <td>169</td>
+                    <td>48</td>
+                    <td>28.4%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>3. 조치 결과 분석</h2>
+            <h3>3.1 조치 유형별 현황</h3>
+            <table>
+                <tr>
+                    <th>조치 유형</th>
+                    <th>건수</th>
+                    <th>비율</th>
+                    <th>이의제기</th>
+                </tr>
+                <tr>
+                    <td>화면 경고</td>
+                    <td>185</td>
+                    <td>45%</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>음성 경고</td>
+                    <td>125</td>
+                    <td>30%</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>시험 중단</td>
+                    <td>58</td>
+                    <td>14%</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>퇴실 조치</td>
+                    <td>45</td>
+                    <td>11%</td>
+                    <td>22</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="alert">
+            <h3>주요 개선 필요사항</h3>
+            <ul>
+                <li>AI 감지 정확도 향상 필요</li>
+                <li>실시간 모니터링 체계 강화</li>
+                <li>조치 기준 명확화</li>
+                <li>이의신청 프로세스 개선</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @page {
+                size: A4;
+                margin: 2cm;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                max-width: 21cm;
+                background: white;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 30px;
+                border-bottom: 2px solid #000;
+                padding-bottom: 20px;
+            }
+            .report-info {
+                margin-bottom: 20px;
+            }
+            .report-info table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .report-info td {
+                padding: 5px;
+            }
+            .section {
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 18px;
+                border-bottom: 1px solid #000;
+                padding-bottom: 5px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 15px 0;
+            }
+            th,
+            td {
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f0f0f0;
+            }
+            @media print {
+                body {
+                    margin: 0;
+                    padding: 0;
+                }
+                .page-break {
+                    page-break-before: always;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>온라인 시험 개요 보고서</h1>
+            <div class="report-info">
+                <table>
+                    <tr>
+                        <td>보고서 번호: OVR-001</td>
+                        <td>시험 코드: TEST-231213</td>
+                        <td>작성일: 2024-12-13</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>1. 시험 기본 정보</h2>
+            <h3>1.1 시험 개요</h3>
+            <table>
+                <tr>
+                    <th width="20%">구분</th>
+                    <th>내용</th>
+                </tr>
+                <tr>
+                    <td>시험명</td>
+                    <td>2024년도 상반기 자격검정시험</td>
+                </tr>
+                <tr>
+                    <td>시행일시</td>
+                    <td>2024.12.13 14:00~16:00 (120분)</td>
+                </tr>
+                <tr>
+                    <td>시험유형</td>
+                    <td>온라인 감독시험</td>
+                </tr>
+                <tr>
+                    <td>출제유형</td>
+                    <td>객관식 40문항, 주관식 5문항</td>
+                </tr>
+                <tr>
+                    <td>총점/배점</td>
+                    <td>100점 (객관식 60점, 주관식 40점)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>2. 응시 현황</h2>
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>인원</th>
+                    <th>비율</th>
+                </tr>
+                <tr>
+                    <td>응시대상</td>
+                    <td>2,000명</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>응시완료</td>
+                    <td>1,950명</td>
+                    <td>97.5%</td>
+                </tr>
+                <tr>
+                    <td>중도포기</td>
+                    <td>30명</td>
+                    <td>1.5%</td>
+                </tr>
+                <tr>
+                    <td>미응시</td>
+                    <td>20명</td>
+                    <td>1.0%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section page-break">
+            <h2>3. 점수 분포</h2>
+            <table>
+                <tr>
+                    <th>점수구간</th>
+                    <th>인원</th>
+                    <th>비율</th>
+                    <th>누적비율</th>
+                </tr>
+                <tr>
+                    <td>90점 이상</td>
+                    <td>195명</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>80-89점</td>
+                    <td>585명</td>
+                    <td>30%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>70-79점</td>
+                    <td>585명</td>
+                    <td>30%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>60-69점</td>
+                    <td>390명</td>
+                    <td>20%</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>60점 미만</td>
+                    <td>195명</td>
+                    <td>10%</td>
+                    <td>100%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>4. 부정행위 의심 현황</h2>
+            <table>
+                <tr>
+                    <th>유형</th>
+                    <th>건수</th>
+                    <th>조치내역</th>
+                </tr>
+                <tr>
+                    <td>시선이탈</td>
+                    <td>85건</td>
+                    <td>경고 처리</td>
+                </tr>
+                <tr>
+                    <td>자리이탈</td>
+                    <td>23건</td>
+                    <td>경고 처리</td>
+                </tr>
+                <tr>
+                    <td>다중얼굴</td>
+                    <td>12건</td>
+                    <td>퇴실 3건</td>
+                </tr>
+                <tr>
+                    <td>금지물품</td>
+                    <td>8건</td>
+                    <td>퇴실 2건</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
