@@ -1,6 +1,6 @@
 MSA 서비스 전체 구성을 다이어그램과 함께 설명하겠습니다.
 
-```
+```mermaid
 graph TB
     subgraph Client Layer
         Web[Web Client]
